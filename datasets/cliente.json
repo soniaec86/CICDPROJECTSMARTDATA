@@ -1,0 +1,10 @@
+[
+  {"idProducto": 1,"idCliente": 1,"Nombre":"walmart", "excenta": true },
+  {"idProducto": 1,"idCliente": 2,"Nombre":"soriana", "excenta": true },
+  {"idProducto": 1,"idCliente": 3,"Nombre":"comercial", "excenta": false },
+  {"idProducto": 1,"idCliente": 4,"Nombre":"tienda abc", "excenta": true },
+  {"idProducto": 2,"idCliente": 5,"Nombre":"Toks", "excenta": true},
+  {"idProducto": 2,"idCliente": 6,"Nombre":"Rest_w", "excenta": false },
+  {"idProducto": 3,"idCliente": 7,"Nombre":"Liverpool", "excenta": true },
+  {"idProducto": 3,"idCliente": 8,"Nombre":"sears", "excenta": true }
+]

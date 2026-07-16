@@ -1,0 +1,106 @@
+{
+  "datasets": [
+    {
+      "name": "2a007b10",
+      "displayName": "totalbyproduct",
+      "config": {
+        "version": "1.1",
+        "source": "catalog_project.golden.totalbyproduct",
+        "dimensions": [
+          {
+            "expr": "source.*"
+          }
+        ],
+        "measures": [
+          {
+            "name": "count",
+            "expr": "COUNT(*)",
+            "comment": "Represents the total number of rows in the dataset. Use this measure to count all",
+            "displayName": "Count"
+          }
+        ]
+      }
+    }
+  ],
+  "pages": [
+    {
+      "name": "9185f99f",
+      "displayName": "Untitled page",
+      "layout": [
+        {
+          "widget": {
+            "name": "bar_total_por_producto",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "2a007b10",
+                  "fields": [
+                    {
+                      "name": "excenta",
+                      "expression": "`excenta`"
+                    },
+                    {
+                      "name": "idproduct",
+                      "expression": "`idproduct`"
+                    },
+                    {
+                      "name": "sum(total)",
+                      "expression": "SUM(`total`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "Total por producto",
+                "showTitle": true
+              },
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "idproduct",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "fieldName": "sum(total)",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "color": {
+                  "fieldName": "excenta",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 6
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_CANVAS",
+      "layoutVersion": "GRID_V1"
+    }
+  ],
+  "uiSettings": {
+    "theme": {
+      "widgetHeaderAlignment": "ALIGNMENT_UNSPECIFIED"
+    },
+    "applyModeEnabled": false
+  }
+}

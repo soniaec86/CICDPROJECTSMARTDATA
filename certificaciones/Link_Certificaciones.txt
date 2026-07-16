@@ -1,0 +1,5 @@
+
+Course Name	                                         Certificate
+Academy Accreditation - Databricks Fundamentals	        https://credentials.databricks.com/91273a25-ef38-4f08-8ba6-245d0e9441b4
+Academy Accreditation - Generative AI Fundamentals	https://credentials.databricks.com/a226e288-2319-4487-a845-521076348990
+Academy Accreditation - Platform Administrator	        https://credentials.databricks.com/748314bd-0534-40f7-a899-04d8989b82f4

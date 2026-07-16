@@ -134,7 +134,7 @@ jobs:
                 "notebook_path": "/smartdata/scripts/main/PrepAmb",
                 "source": "WORKSPACE",
                   "base_parameters": {
-                  "storageName": "adlssmartdata1921"
+                  "storage_account": "adlssmartdata1921"
                 }
               },
               "existing_cluster_id": "$CLUSTER_ID",
@@ -149,9 +149,9 @@ jobs:
                 "source": "WORKSPACE",
                 "base_parameters": {
                   "container": "raw",
-                  "catalogo": "catalog_project",
-                  "esquema": "bronze",
-                  "storageName": "adlssmartdata1921"
+                  "catalog": "catalog_project",
+                  "schema": "bronze",
+                  "storage_account": "adlssmartdata1921"
                 }
               },
               "existing_cluster_id": "$CLUSTER_ID",
@@ -171,9 +171,9 @@ jobs:
                 "source": "WORKSPACE",
                 "base_parameters": {
                   "container": "raw",
-                  "catalogo": "catalog_project",
-                  "esquema": "bronze",
-                  "storageName": "adlssmartdata1921"
+                  "catalog": "catalog_project",
+                  "schema": "bronze",
+                  "storage_account": "adlssmartdata1921"
                 }
               },
               "existing_cluster_id": "$CLUSTER_ID",
@@ -193,9 +193,9 @@ jobs:
                 "source": "WORKSPACE",
                   "base_parameters": {
                   "container": "raw",
-                  "catalogo": "catalog_project",
-                  "esquema": "bronze",
-                  "storageName": "adlssmartdata1921"
+                  "catalog": "catalog_project",
+                  "schema": "bronze",
+                  "storage_account": "adlssmartdata1921"
                 }
               },
               "existing_cluster_id": "$CLUSTER_ID",
@@ -215,9 +215,9 @@ jobs:
                 "source": "WORKSPACE",
                   "base_parameters": {
                   "container": "raw",
-                  "catalogo": "catalog_project",
-                  "esquema": "bronze",
-                  "storageName": "adlssmartdata1921"
+                  "catalog": "catalog_project",
+                  "schema": "bronze",
+                  "storage_account": "adlssmartdata1921"
                 }
               },
               "existing_cluster_id": "$CLUSTER_ID",
@@ -236,9 +236,9 @@ jobs:
                 "notebook_path": "/smartdata/scripts/main/5-Transformmontobyproduct",
                 "source": "WORKSPACE",
                   "base_parameters": {
-                  "catalogo": "catalog_project",
-                  "esquema_source": "bronze",
-                  "esquema_sink": "silver"
+                  "catalog": "catalog_project",
+                  "schemaOrigin": "bronze",
+                  "schemaDest": "silver"
                 }
               },
               "existing_cluster_id": "$CLUSTER_ID",
@@ -266,9 +266,9 @@ jobs:
                 "notebook_path": "/smartdata/scripts/main/6-Transformaccountbyclient",
                 "source": "WORKSPACE",
                   "base_parameters": {
-                  "catalogo": "catalog_project",
-                  "esquema_source": "bronze",
-                  "esquema_sink": "silver"
+                  "catalog": "catalog_project",
+                  "schemaOrigin": "bronze",
+                  "schemaDest": "silver"
                 }
               },
               "existing_cluster_id": "$CLUSTER_ID",
@@ -287,9 +287,9 @@ jobs:
                 "notebook_path": "/smartdata/scripts/main/7-load",
                 "source": "WORKSPACE",
                 "base_parameters": {
-                  "catalogo": "catalog_project",
-                  "esquema_source": "silver",
-                  "esquema_sink": "golden"
+                  "catalog": "catalog_project",
+                  "schemaorigen": "silver",
+                  "schemafinal": "golden"
                 }
               },
               "existing_cluster_id": "$CLUSTER_ID",
